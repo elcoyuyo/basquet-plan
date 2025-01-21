@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Seguimiento del Plan - Club José Hernández</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #3e3e3e;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .form-section label {
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .form-section input, .form-section select, .form-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-section textarea {
+            height: 100px;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de Seguimiento del Plan - Club José Hernández</h1>
+        <form action="/submit" method="post">
+            <!-- Información sobre el progreso del plan -->
+            <div class="form-section">
+                <label for="escuelita_participantes">¿Cuántos jugadores participaron en la "Escuelita" durante este mes?</label>
+                <input type="number" id="escuelita_participantes" name="escuelita_participantes" required>
+            </div>
+
+            <div class="form-section">
+                <label for="u9_participantes">¿Cuántos jugadores participaron en U9 este mes?</label>
+                <input type="number" id="u9_participantes" name="u9_participantes" required>
+            </div>
+
+            <div class="form-section">
+                <label for="u11_participantes">¿Cuántos jugadores participaron en U11 este mes?</label>
+                <input type="number" id="u11_participantes" name="u11_participantes" required>
+            </div>
+
+            <div class="form-section">
+                <label for="u13_participantes">¿Cuántos jugadores participaron en U13 este mes?</label>
+                <input type="number" id="u13_participantes" name="u13_participantes" required>
+            </div>
+
+            <div class="form-section">
+                <label for="u15_participantes">¿Cuántos jugadores participaron en U15 este mes?</label>
+                <input type="number" id="u15_participantes" name="u15_participantes" required>
+            </div>
+
+            <div class="form-section">
+                <label for="u17_participantes">¿Cuántos jugadores participaron en U17 este mes?</label>
+                <input type="number" id="u17_participantes" name="u17_participantes" required>
+            </div>
+
+            <div class="form-section">
+                <label for="u21_participantes">¿Cuántos jugadores participaron en U21 este mes?</label>
+                <input type="number" id="u21_participantes" name="u21_participantes" required>
+            </div>
+
+            <div class="form-section">
+                <label for="comentarios_generales">Comentarios sobre el progreso del plan este mes</label>
+                <textarea id="comentarios_generales" name="comentarios_generales" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Enviar Formulario</button>
+        </form>
+    </div>
+</body>
+</html>
